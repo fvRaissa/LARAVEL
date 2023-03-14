@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
+.container{
+    margin-right: -0.3%;
+}
+
+.titulo{
+    margin-top: 4%;
+    width: 60%;
+    margin-left: 14%;
+    /* background-color: brown; */
+}
+h1{
+    margin-left: 8%;
+    flex-wrap: nowrap;
+    font-size: 5.5vmax;
+    letter-spacing: 0.8vw;
+    font-weight: 600;
+    position: absolute;
+}
+
+form{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 45vw;
+    height: 55vh;
+    margin-left: 22%;
+    margin-top: 15%;
+    box-shadow:0px 0px 60px #d717f541;
+    border-radius: 15px;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+.caixa_txt {
+    width: 100%;
+    border: 0;
+    border-bottom: 1.8px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    border-radius: 2px;
+    margin-bottom: 2%;
+}
+  
+.caixa_txt:focus {
+    border-radius: 2px;
+    padding-bottom: 7px;  
+    border-width: 1.8px;
+    border-color: #f56517;
+    /* ↓↓↓ se quiser usar degrade no fundo é só fazer isso ai ↓↓↓*/
+    /* border-image: linear-gradient(265deg, rgba(5,94,93,1) 23%, rgba(111,38,163,1) 64%, rgba(245,101,23,1) 100%);
+    border-image-slice: 1; */
+}
+  /* reset input */
+
+.caixa_msg{
+    font-family: inherit;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 30%;
+    min-height: 20%;
+    border: 0;
+    border-bottom: 1.8px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    border-radius: 2px;
+    margin-bottom: 2%;
+}
+.caixa_msg:focus {
+    border-radius: 1.8px;
+    padding-bottom: 6px;  
+    border-width: 1.8px;
+    border-color: #f56517;
+}
+
+
+
+/* EFEITO BOTÃO */
+/* botão normal */
+#enviar{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 25%;
+    height: 15%;
+    color: #fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+    padding: 2% 4%;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    bottom: 0%;
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+/* muda cor do txt */
+#enviar:hover{
+    color:rgba(0, 0, 0);
+}
+
+/* quando passar o mouse */
+#enviar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s ;
+
+}
+
+#enviar:hover::before{
+    width:150%;
+}
+
+
